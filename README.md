@@ -31,11 +31,21 @@ style-distiller/
 ├── README.md                      # 本文件
 ├── references/
 │   └── distillation-guide.md      # 八维细则、强度标准、避坑、自检测试规范
-└── assets/
-    └── style-skill-template/      # 生成的写作风格 skill 标准骨架
+├── assets/
+│   └── style-skill-template/      # 生成的写作风格 skill 标准骨架
+│       ├── SKILL.md
+│       └── scripts/selfcheck.py
+└── examples/
+    └── style-mingchao/            # 第一个生成的风格 skill 示例（当年明月 / 明朝那些事儿）
         ├── SKILL.md
         └── scripts/selfcheck.py
 ```
+
+## 第一个示例：style-mingchao
+
+`examples/style-mingchao/` 是用本 skill 产出的第一个「写作风格 skill」（当年明月 / 《明朝那些事儿》风格）。
+数值与示例规律来自原作者公开的蒸馏报告，已标注覆盖率；提供全本 txt 后可经 `style-distiller` 重蒸补全。
+可直接安装试用：复制到 `~/.workbuddy/skills/style-mingchao/`。
 
 ## 安装到 WorkBuddy
 
