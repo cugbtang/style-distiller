@@ -1,0 +1,23 @@
+{
+  "total_chars": 1949,
+  "total_sentences": 37,
+  "avg_sent_len": 52.7,
+  "short_sents": 11,
+  "short_sent_ratio": 0.297,
+  "single_line_short_paras": 21,
+  "book_titles": 4,
+  "book_title_list": [
+    "《明实录》",
+    "《明通鉴》",
+    "《明史》",
+    "《明史纪事本末》"
+  ],
+  "voice_hits": 3,
+  "voice_per_k": 1.54,
+  "bracket_count": 10,
+  "bracket_avg": 5.6,
+  "tender_hits": 7,
+  "logic_hits": 8,
+  "suspense_hooks": 1,
+  "beam": "朱元璋 / 朱重八（人物作梁）"
+}

@@ -38,14 +38,24 @@ style-distiller/
 └── examples/
     └── style-mingchao/            # 第一个生成的风格 skill 示例（当年明月 / 明朝那些事儿）
         ├── SKILL.md
-        └── scripts/selfcheck.py
+        ├── scripts/selfcheck.py
+        └── realrun/               # 真实运行的产物（真实样本扫描+规律+避坑）
+            ├── corpus-sample.txt   # 公开可获取的原文片段（引子+童年，1949字）
+            ├── scan.py             # 真实八维扫描脚本
+            ├── scan-result.json    # 真实统计结果
+            ├── eight-dim-scan.md   # 八维真实统计（含覆盖率声明）
+            ├── rules.md            # 规律清单（真实样本+强度分级）
+            └── excluded-material.md# 剔除的非作者内容（演示避坑）
 ```
 
 ## 第一个示例：style-mingchao
 
 `examples/style-mingchao/` 是用本 skill 产出的第一个「写作风格 skill」（当年明月 / 《明朝那些事儿》风格）。
-数值与示例规律来自原作者公开的蒸馏报告，已标注覆盖率；提供全本 txt 后可经 `style-distiller` 重蒸补全。
-可直接安装试用：复制到 `~/.workbuddy/skills/style-mingchao/`。
+- `SKILL.md` + `scripts/selfcheck.py`：可安装试用的风格 skill。数值融合「原博主全本报告值」与「真实样本印证」，已标注覆盖率。
+- `realrun/`：**真实跑过一遍**的产物——对公开可获取的原文「引子+童年」做了真实八维扫描（括号旁白实测均长 5.6 字、史料书名号密集等），并演示了「剔除编辑导语/毛佩琦序言」的避坑。
+
+提供全本 txt 后可经 `style-distiller` 重蒸补全，把标「软」的项升级为「硬/中」。
+可直接安装试用：复制 `examples/style-mingchao/`（去掉 realrun 或保留均可）到 `~/.workbuddy/skills/style-mingchao/`。
 
 ## 安装到 WorkBuddy
 
